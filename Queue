@@ -1,0 +1,54 @@
+
+package algorithmshwlab7queue;
+
+class Node<E>{
+    Node next = null;
+    E data;
+    Node(E data){
+        this.data = data;
+    }
+}
+
+public class Queue<E> {
+    Node front;
+    Node back;
+    int numOfElements;
+    Node counter;
+    
+    void enqueue(E data){
+        if(front == null && back == null){
+            
+        }
+        numOfElements++;
+    }
+    
+    void denqueue(E data){
+        if(front == back){
+            
+        }
+        numOfElements--;
+    }
+    
+    boolean isEmpty(){
+        if(front == null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    
+    int size(){
+        return numOfElements;
+    }
+    
+    void print(){
+        counter = front;
+        while(counter != null){
+            System.out.println(counter.data);
+            counter = counter.next;
+        }
+    }
+    
+}
